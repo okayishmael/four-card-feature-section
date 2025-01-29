@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    
+    --very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/* Mobile Layout */
+body{   
+  font-family: "Poppins", serif;
+}
+
+.header{
+    padding-top: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.page-title{
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.page-title span{
+    font-weight: 600;
+}
+
+.cards{
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction:  column;
+    
+    border-radius: .8rem;
+    gap: 5rem;
+    padding: 1.25rem;
+    box-shadow: 5px 5px 18px lightblue;
+    margin-bottom: 1.25rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+.card-description{
+    font-size: 1rem;
+}
+
+.red-border{
+    border-top: .5rem solid var(--Red);
+}
+
+.cyan-border{
+    border-top: .5rem solid  var(--Cyan);
+}
+
+.blue-border{
+    border-top: .5rem solid var(--blue);
+}
+
+.oranger-border{
+    border-top: .5rem solid var(--orange);
+}
+
+.card-title{
+    font-weight: 600;
+}
+.icon{
+    align-self: flex-end;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 1rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Medium to larger scrren layout */
+@media (min-width: 768px){
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+
+    }
+
+
+   .one-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+
+   .one-card, .two-cards{
+    width: 30%;
+    
+   }
+    
+}
